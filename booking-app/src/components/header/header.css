@@ -1,0 +1,206 @@
+:root{
+    --background--color:#003580;
+    --background--hover:#0b56c0;
+    --background--button-hover:#e0e8f3;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background--color);
+}
+
+.header .listicon{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 0;
+    
+}
+
+.header .listicon .listItem{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.header .listicon .listItem:hover{
+    background-color: var(--background--hover);
+}
+
+.header .listicon .listItem>span{
+    margin: 0 8px;
+}
+
+.header .listicon .listItem.active{
+    border: 1px solid #fff;
+}
+
+.header .downpart{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 35px 0 60px 0;
+    /* height: 400px; */
+    background-image: url('https://q-xx.bstatic.com/xdata/images/xphoto/3000x1033/173281189.jpeg?k=1fd6eb071690e7733c308db125cf842d59b6be95a26a37e7a303483a47a80273&o=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header .downpart .down{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.header .downpart .down .headerDesc{
+    font-size: 50px;
+}
+
+.header .downpart .down > p{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+}
+
+.header .downpart .down .headerBtn{
+    margin: 25px 0;
+    padding: 10px;
+    background-color: var(--background--hover);
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size:medium;
+    transition: all 0.3s ease;
+}
+
+.header .downpart .down .headerBtn:hover{
+    background: var(--background--color);
+}
+
+.header .downpart .searchBox{
+    position:absolute;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.header .downpart .searchBox .searchItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: #fff;
+}
+
+.header .downpart .searchBox .searchItems .searchItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid orange;
+    border-left: 0px;
+    padding: 7px 15px;
+    color: black;
+    cursor: pointer;
+
+}
+.header .downpart .searchBox .searchItems .searchItem:first-child{
+    border-left: 5px solid orange;
+    /* border-radius: 3px; */
+    
+
+}
+.header .downpart .searchBox .searchItems .searchItem .it{
+    color: gray;
+    padding: 11px 15px;
+    
+}
+
+.header .downpart .searchBox .searchItems .searchItem:first-child input{
+    border: none;
+    outline: none;
+    width: 20vmax;
+}
+.header .downpart .searchBox .searchItems .searchItem .bt {
+    border: none;
+    cursor: pointer;
+    padding: 11px;
+    background-color: #fff;
+}
+.header .downpart .searchBox .searchItems .gaurav button{
+    border: none;
+    color: #fff;
+    font-size: medium;
+    background-color: var(--background--color);
+    cursor: pointer;
+    font-weight: 500;
+}
+.header .downpart .searchBox .searchItems .searchItem:last-child{
+    background-color: var(--background--color);
+    padding: 17px 30px;
+}
+
+#search::-webkit-search-cancel-button{
+    color: black;
+    font-size: 15px;
+}
+
+.header .downpart .searchBox .searchItems .searchItem .daterange{
+    position: absolute;
+    /* height: 100px; */
+    /* width: 100; */
+    top: 70px;
+    z-index: 100;
+}
+
+.header .downpart .options{
+    position: absolute;
+    top: 70px;
+    /* background-color: red; */
+    right: 100px;
+    -webkit-box-shadow: -14px 14px 18px -1px rgba(102,101,102,0.53);
+    -moz-box-shadow: -14px 14px 18px -1px rgba(102,101,102,0.53);
+    box-shadow: -14px 14px 18px -1px rgba(102,101,102,0.53);
+    padding: 0 0 25px 0;
+    z-index: 100;
+    background-color: #fff;
+}
+.header .downpart .options .optionItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 15px 10px 0px 10px ;
+}
+.header .downpart .options .optionItem .optionText{
+    font-size: 18px;
+}
+
+.header .downpart .options .optionItem .optionCounterNumber{
+    margin: 0 5px;    
+}
+
+.header .downpart .options .optionItem .optionCounterButton{
+    padding: 12px 14px;
+    margin: 0 10px;
+}
+
+.optionCounterButton:disabled{
+    cursor:not-allowed;
+}

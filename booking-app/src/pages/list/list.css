@@ -1,0 +1,105 @@
+
+
+.listWrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    
+}
+
+.listSearch{
+    grid: 1;
+    background-color: #febb02;
+    padding: 25px;
+    position: sticky;
+    top: 25px;
+    border-radius: 5px;
+    height: max-content;
+    margin-right: 15px;
+}
+.listSearch  .searchItem{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    margin-bottom: 10px;
+}
+.listSearch  .searchItem >span{
+    font-size: 13px;
+    font-weight:lighter;
+}
+
+.listSearch .inputBox{
+    display: flex;
+    gap: 0;
+    
+}
+.listSearch .inputBox>i{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+}
+.listSearch  .inputBox>input{
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    width: 100%;
+    padding: 8px;
+
+}
+
+.listRight{
+    grid:3
+}
+
+.checkIn{
+    width: 100%;
+}
+.searchItem .setDate{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+.dateRange{
+    margin-top: 3px;
+}
+
+.lsOptions{
+    padding: 10px;
+  }
+  
+  .lsOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+  }
+  
+  .lsOptionInput{
+    width: 50px;
+  }
+
+
+  .listSearch>button{
+    padding: 10px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .listResult {
+    flex: 3;
+  }
+  

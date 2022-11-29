@@ -1,0 +1,100 @@
+:root{
+    --background--color:#003580;
+    --background--hover:#0b56c0;
+    --background--button-hover:#e0e8f3;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background--color);
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar .nav{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navbar .nav .left{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.navbar .nav .right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav .right div{
+    
+    /* background: black; */
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    
+}
+
+.navbar .nav .right div:hover{
+    background-color: var(--background--hover);
+    /* border: 1px solid white; */
+}
+
+.navbar .nav .right div:last-child:hover{
+    background-color: var(--background--color);
+}
+.navbar .nav .right >div>img{
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    
+}
+
+.navbar .nav .right >div>i{
+    font-size: 25px;
+}
+
+.navbar .nav .right .box{
+    border: 1px solid white;
+    padding: 4px 5px;
+    font-size: 1.1vmax;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+.navbar .nav .right .box:hover{
+    background-color: var(--background--hover)
+    
+}
+
+.navbar .nav .right .button>button{
+    border: none;
+    background-color: #fff;
+    color: var(--background--color);
+    padding: 7px;
+    font-size: 15px;
+    margin: 0 5px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--background--hover);
+}
+
+.navbar .nav .right .button>button:hover{
+    background-color: var(--background--button-hover);
+}
+
+
